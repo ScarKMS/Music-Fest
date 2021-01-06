@@ -336,6 +336,11 @@ a {
 img {
   max-width: 100%; }
 
+h1,
+h2,
+h3 {
+  margin: 0; }
+
 h1 {
   font-size: 4rem; }
 
@@ -344,3 +349,24 @@ h2 {
 
 h3 {
   font-size: 3rem; }
+
+/** Estructura Sitio **/
+.header {
+  background-color: #4cb8b3; }
+  .header .contenido-header {
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header h1 {
+    color: #ffffff;
+    font-size: 3rem; }
+
+.navegacion-principal {
+  display: flex;
+  gap: 2rem; }
+  .navegacion-principal a {
+    color: #ffffff;
+    font-size: 2rem; }
+    .navegacion-principal a:hover {
+      color: #fef46d; }
