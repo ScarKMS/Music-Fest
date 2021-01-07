@@ -5,7 +5,9 @@ const sass = require('gulp-sass');
 
 function compilarCSS() {
     return src('src/scss/app.scss')
-        .pipe(sass())
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }))
         .pipe(dest('./build/css'))
 
 }

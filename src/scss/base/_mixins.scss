@@ -1,3 +1,17 @@
-@mixin nuevoMixin {
-    font-size: 3rem;
+@mixin telefono {
+    @media(min-width: $telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: $desktop) {
+        @content;
+    }
 }
