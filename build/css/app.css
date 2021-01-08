@@ -436,6 +436,12 @@ h3 {
   }
 }
 
+.header.fijo {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 3px 3px #444;
+}
+
 .navegacion-principal {
   display: flex;
   gap: 2rem;
