@@ -6,6 +6,12 @@ const webp = require('gulp-webp');
 const concat = require('gulp-concat');
 
 
+/* Utilidades CSS */
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
+const cssnano = require('cssnano');
+const sourcemaps = require('gulp-sourcemaps');
+
 
 /* PATHS */
 const paths = {
@@ -18,19 +24,12 @@ const paths = {
 
 function compilarCSS() {
     return src(paths.scss)
-        .pipe(sass({
-            outputStyle: 'expanded'
-        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(sourcemaps.write('.'))
         .pipe(dest('./build/css'))
 
-}
-
-function minificarCSS() {
-    return src(paths.scss)
-        .pipe(sass({
-            outputStyle: 'compressed'
-        }))
-        .pipe(dest('./build/css'))
 }
 
 function javascript() {
@@ -59,9 +58,8 @@ function watchArchivos() {
 }
 
 //exports.compilarCSS = compilarCSS;
-exports.minificarCSS = minificarCSS;
 //exports.imagenes = imagenes;
-exports.watchArchivos = watchArchivos;
+//exports.watchArchivos = watchArchivos;
 //exports.versionWebp = versionWebp;
 
 exports.default = series(compilarCSS, javascript, watchArchivos);
