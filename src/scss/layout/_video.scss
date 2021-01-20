@@ -30,8 +30,10 @@
         color: $blanco;
         display: flex;
         flex-direction: column;
-        font-size: 7rem;
         align-items: flex-start;
+        @include tablet {
+            font-size: 7rem;
+        }
         span {
             background-color: $rosa;
             font-size: 2rem;
