@@ -17,44 +17,70 @@ _Puedes instalar todas las dependencias juntas usando:_
 npm install
 ```
 
-_O puedes instalar las dependecias una a una_
+_Descripcion de cada paquete usado_
 
+
+_Permite cambiar la extencion de un archivo_
 ```
 npm install --save-dev autoprefixer
 ```
+
+_Minifica el CSS para produccion_
 ```
 npm install --save-dev cssnano
 ```
+
+_Archivo de configuracion para escuchar por cambios_
 ```
 npm install --save-dev gulp
 ```
+
+_Herramienta para concatenar cadenas de texto_
 ```
 npm install --save-dev gulp-concat
 ```
+
+_Comprimir imagen sin perder calidad_
 ```
 npm install --save-dev gulp-imagemin
 ```
+
+_Mostrar notificaciones_
 ```
 npm install --save-dev gulp-notify
 ```
+
+_Rutanas pipe para css_
 ```
 npm install --save-dev gulp-postcss
 ```
+
+_Renombrar archivos_
 ```
 npm install --save-dev gulp-rename
 ```
+
+_Usar SASS_
 ```
 npm install --save-dev gulp-sass
 ```
+
+_Generar mapas css y js_
 ```
 npm install --save-dev gulp-sourcemaps
 ```
+
+_Minificar JS_
 ```
 npm install --save-dev gulp-terser-js
 ```
+
+_Convertir imagenes a WEBP_
 ```
 npm install --save-dev gulp-webp
 ```
+
+_Usar pipe sin gulp_
 ```
 npm install --save-dev postcss
 ```
